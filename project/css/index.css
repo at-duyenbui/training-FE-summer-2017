@@ -1,9 +1,0 @@
-header::before{
-	content: "before";
-}
-header::after{
-	content: "after";
-	width: 20px;
-	display: inline-block;
-
-}

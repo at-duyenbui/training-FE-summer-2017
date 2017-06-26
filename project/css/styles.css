@@ -120,12 +120,6 @@ span.contact{
  	text-transform: uppercase;
  }
 
-.sidebar-left{
-	width: 24%;
-	margin-right: 2%;
-	float: left;
-}
-
 .col-main{
 	width: 74%;
 	float: right;
@@ -192,6 +186,67 @@ main {
 	clear: left;
 }
 
+/*left side-bar*/
+.sidebar-left{
+	width: 24%;
+	margin-right: 2%;
+	float: left;
+}
+
+.sidebar-left .menu-sidebar span{
+	width: 100%;
+	height: 40px;
+	list-style-type: none;
+	background-color: rgb(217, 228, 233);
+	text-transform: uppercase;
+	display: block;
+	line-height: 40px;
+	padding-left: 10%;
+}
+
+.sidebar-left .menu-sidebar ul {
+	list-style-type: disc;
+	padding-left: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%; 
+}
+
+.sidebar-left .menu-sidebar ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+.sidebar-left .form-sidebar{
+	margin-top: 30px;
+	display: block;
+	background-color: rgb(217, 228, 233);
+}
+
+.sidebar-left .form-sidebar h4{
+	padding: 10px 10%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.sidebar-left .form-sidebar div input{
+	width: 80%;
+	height: 30px;
+	margin-left: 10%;
+	margin-bottom: 10px;
+}
+
+.sidebar-left .form-sidebar div button{
+	width: 35%;
+	height: 35px;
+	background-color: rgb(75, 188, 86);
+	text-align: center;
+	color: white;
+	margin-bottom: 10px;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+/*footer*/
 footer{
 	background-color: rgb(98,198,248);
 }

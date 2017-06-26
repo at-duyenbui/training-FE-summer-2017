@@ -14,7 +14,7 @@
 	content: "";
 	display: block;
 }
-/* header - logo and name of owner*/
+header - logo and name of owner
 .div-title{
 	height: 100px;
 }
@@ -41,7 +41,7 @@
 	text-align: center;
 }
 
-/* header - contact information*/
+header - contact information
 .div-title .div-title-right{
 	background: url(../images/icon-telephone.png);
 	background-repeat: no-repeat;
@@ -63,8 +63,8 @@ span.contact{
 	padding-left: 40px;
 	padding-top: 10px;
 }
- /* header - menu*/
-.div-menu{   /*div cover outline menu*/
+ header - menu
+.div-menu{   div cover outline menu
 	height: 60px;
 	border-top: 1px solid #b8b8b8;
 }
@@ -89,7 +89,7 @@ span.contact{
 	border: none;
 }
 
-.div-menu nav ul li:last-child ul li{ /* li tag contains other ul / li tag*/
+.div-menu nav ul li:last-child ul li{ li tag contains other ul / li tag
 	border-right: none;
 }
 
@@ -100,8 +100,7 @@ span.contact{
 	padding: 20px 10px;
 	height: 60px;
 	text-decoration: none;
-/* 	text-transform: uppercase;
- */}
+text-transform: uppercase;}
 
 .div-menu nav ul li a:hover{
 	background-color: #d7d9dd;
@@ -129,7 +128,6 @@ main {
 	padding-top: 50px;
 	padding-bottom: 30px;
 }
-
 .col-main .news-list{
 	width: 100%;
 }

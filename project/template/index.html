@@ -8,45 +8,51 @@
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<header id="header" class="">
-		
-		<div class="container div-title clr">
-			<div class="div-title-left clr">
-				<div class="div-title-logo">
-					<img src="../images/logo.png" alt="">	
+	<header id="header">
+		<div class="div-title">
+			<div class="container">
+				<div class="div-title-left clr">
+					<!-- <div class="div-title-logo"> -->
+					<img class="div-title-logo" src="../images/logo.png" alt="">	
+					<!-- </div> -->
+					<div class="div-title-name">
+						<h3>PHÒNG KHÁM CHUYÊN KHOA</h3>
+						<span>Vật lý trị liệu - Phục hồi chức năng</span>
+					</div>
 				</div>
-				<div class="div-title-name">
-					<h3>PHÒNG KHÁM CHUYÊN KHOA</h3>
-					<span>Vật lý trị liệu - Phục hồi chức năng</span>
+				<div class="div-title-right">
+					<span class="contact">Câu hỏi cho bác sĩ? 05113941 977</span>
 				</div>
-			</div>
-			<div class="div-title-right">
-				<span class="contact">Câu hỏi cho bác sĩ? 05113941 977</span>
 			</div>
 		</div>
-
 		<div class="div-menu clr">
-			<nav class="container">
-				<ul >
-					<li><a href="">Trang chủ</a></li>
-					<li><a href="">Giới thiệu</a></li>
-					<li><a href="">Dịch vụ y tế</a></li>
-					<li><a href="">Y học thường thức</a></li>
-					<li><a href="">Đặt lịch khám</a></li>
-					<li><a href="">Tư vấn & liên hệ</a></li>
-					<li>
-						<ul>
-							<li><a href=""><img src="../images/icon-facebook.png" alt=""></a></li>
-							<li><a href=""><img src="../images/icon-gplus.png" alt=""></a></li>
-							<li><a href=""><img src="../images/icon-youtube.png" alt=""></a></li>
-						</ul>
-					</li>
-				</ul>		
+			<nav>
+				<div class="container">
+					<ul >
+						<li><a href="">Trang chủ</a></li>
+						<li><a href="">Giới thiệu</a></li>
+						<li><a href="">Dịch vụ y tế</a></li>
+						<li><a href="">Y học thường thức</a></li>
+						<li><a href="">Đặt lịch khám</a></li>
+						<li><a href="">Tư vấn & liên hệ</a></li>
+						<li>
+							<ul>
+								<li><a href=""><img src="../images/icon-facebook.png" alt=""></a></li>
+								<li><a href=""><img src="../images/icon-gplus.png" alt=""></a></li>
+								<li><a href=""><img src="../images/icon-youtube.png" alt=""></a></li>
+							</ul>
+						</li>
+					</ul>	
+				</div>	
 			</nav>
-			
 		</div>	
 		<div class="bg">
-			<p class="container">Trang chủ / Dịch vụ y tế</p>
+			<div class="container"><!--  / -->
+				<ul class="breadcrumb">
+					<li><a href="">Trang chủ</a></li>
+					<li><a href="">Dịch vụ y tế</a></li>
+				</ul>
+			</div>
 		</div>
 
 	</header><!-- /header -->
@@ -54,38 +60,43 @@
 	<main class="container clr">
 		<aside class="sidebar-left">
 			<div class="menu-sidebar">
-				
-				<span>Người lớn</span>
-					<ul>
-						<li><a href="">Đau cổ-vai-tay</a></li>
-						<li><a href="">Đau cột sống</a></li>
-						<li><a href="">Thoát vị đĩa đệm</a></li>
-						<li><a href="">Khớp gối, khớp hông</a></li>
-						<li><a href="">Đau chân</a></li>
-						<li><a href="">Các bệnh về cơ</a></li>
-						<li><a href="">Thần kinh ngoại biên</a></li>
-						<li><a href="">Di chứng tai biến mạch máu não</a></li>
-						<li><a href="">Di chứng chấn thương</a></li>
-					</ul>
-				<span>Trẻ em</span>
+				<ul>
+					<li>
+						<a class="title-menu-sidebar" href="">Người lớn</a>
+						<ul>
+							<li><a href="">Đau cổ-vai-tay</a></li>
+							<li><a href="">Đau cột sống</a></li>
+							<li><a href="">Thoát vị đĩa đệm</a></li>
+							<li><a href="">Khớp gối, khớp hông</a></li>
+							<li><a href="">Đau chân</a></li>
+							<li><a href="">Các bệnh về cơ</a></li>
+							<li><a href="">Thần kinh ngoại biên</a></li>
+							<li><a href="">Di chứng tai biến mạch máu não</a></li>
+							<li><a href="">Di chứng chấn thương</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="title-menu-sidebar" href="">Trẻ em</a>
+					</li>
+				</ul>
 				
 			</div>
 			<form class="form-sidebar" action="" method="get" accept-charset="utf-8">
 				<h4>Đặt lịch khám</h4>
 				<hr>
-				<div>
+				<div class="input-box">
 					<input type="text" name="username" id="name" placeholder="Họ và tên">
 				</div>
-				<div>
+				<div class="input-box">
 					<input type="text" name="address" id="add" placeholder="Địa chỉ">
 				</div>
-				<div>
+				<div class="input-box">
 					<input type="text" name="phonenumber" id="phone" placeholder="Số điện thoại">
 				</div>
-				<div>
+				<div class="input-box">
 					<input type="date" name="time" id="time" placeholder="Thời gian">
 				</div>
-				<div>
+				<div class="input-box">
 					<button type="submit" name="submit">Đặt lịch</button>
 				</div>				
 			</form>

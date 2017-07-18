@@ -77,13 +77,13 @@ class Student extends Person{
 **Write an example for each of the following new features in ES6: **
 -	Block scope variable
 ```typescript
-function checkEven(n){
-	if(n % 2 == 0){
-		return true;
-	} else{
-		return false;
-	}
+for(let i = 0; i < 5; i++){
+	console.log(i);
 }
+function multiple(i, k){
+	return i * k;
+}
+
 ```
 
 -	Template Literals 

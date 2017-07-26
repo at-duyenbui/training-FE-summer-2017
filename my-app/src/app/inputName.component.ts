@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'input-form',
@@ -6,9 +6,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class InputName {
 	name: string;
-  @Output() addNew: EventEmitter<string> = new EventEmitter<string>();
-
-  addName(){
-  	this.addNew.emit(this.name);
+  constructor(){
+    this.name = "";
   }
 }

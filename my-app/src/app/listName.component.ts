@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 var $main = document.getElementById('js-main');
 
@@ -7,5 +7,8 @@ var $main = document.getElementById('js-main');
   templateUrl: './listName.component.html'
 })
 export class ListName {
-  @Input() usernames: string[];
+  usernames: Array<string>;
+  constructor(){
+    this.usernames = [];
+  }
 }

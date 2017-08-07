@@ -15,9 +15,4 @@ export class TrainersService {
     return this.http.get('./assets/data/data.json')
                     .map(res => res.json());
   }
-
-  getTrainer() {
-    return this.http.get('./assets/data/data.json')
-                    .map(res => res.json());
-  }
 }

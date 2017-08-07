@@ -1,4 +1,4 @@
-<div class="col-md-4" *ngIf="eachtrainer != null">
+<div class="col-md-4" *ngIf="eachtrainer">
   <img src="{{ eachtrainer.avatar | image:true }}" alt="">
   <h4><strong>{{eachtrainer.name}}</strong></h4>
   <p [emptyData]="eachtrainer.birthday"></p>

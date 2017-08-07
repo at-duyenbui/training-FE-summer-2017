@@ -17,7 +17,7 @@ export class DetailComponent {
   }
 
   ngOnChanges() {
-    this.listTrainer.getTrainer().subscribe(
+    this.listTrainer.getTrainers().subscribe(
             data => {
               let trainers = data.trainers
               // this.eachtrainer = trainers.filter(trainer => trainer.id === this.id) ;

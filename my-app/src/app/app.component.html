@@ -1,35 +1,38 @@
-<form #memberForm="ngForm" (ngSubmit)="addMember(memberForm)">
-  <fieldset ngModelGroup="personal">
+<form [formGroup]="memberForm" novalidate (ngSubmit)="addMember(memberForm.value)">
+  <fieldset formGroupName="personal">
     <legend>Personal</legend>
 
     <label for="avatar">Avatar</label>
-    <input type="text" name="avatar" id="avatar" ngModel>
+    <input type="text" name="avatar" id="avatar" formControlName="avatar">
 
     <label for="name">Name</label>
-    <input type="text" name="name" id="name" ngModel>
+    <input type="text" name="name" id="name" formControlName="name">
 
     <label for="birthday">Birthday</label>
-    <input type="date" name="birthday" id="birthday" ngModel>
-
-    <label for="skill">Skill</label>
-    <input type="text" name="skill" id="skill" ngModel>
+    <input type="date" name="birthday" id="birthday" formControlName="birthday">
   </fieldset>
 
-  <fieldset ngModelGroup="company">
+  <fieldset formGroupName="company">
     <legend>Company</legend>
 
     <label for="joined">Joined at</label>
-    <input type="date" name="joined" id="joined" ngModel>
+    <input type="date" name="joined" id="joined" formControlName="joined">
 
     <label for="team">Team</label>
-    <select name="team" id="team" ngModel required>
+    <select name="team" id="team" formControlName="team">
       <option value="Ruby">Ruby</option>
       <option value="FE">FE</option>
       <option value="PHP">PHP</option>
     </select>
+
+    <label for="skill">Skill</label>
+    <input type="text" name="skill" id="skill" formControlName="skill">
+    <small [hidden]="memberForm.controls.company.controls.skill.valid">
+        Needs main skill
+    </small>
   </fieldset>
 
-  <button type="submit" [disabled]="!memberForm.form.valid">Add member</button>
+  <button type="submit" [disabled]="!memberForm.valid">Add member</button>
 </form>
 
 <h1>List user</h1>

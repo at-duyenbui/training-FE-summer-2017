@@ -1,0 +1,20 @@
+<div class="col-md-8">
+  <table class="table table-hover">
+    <tr>
+      <th>Avatar</th>
+      <th>Name</th>
+      <th>Birthday</th>
+      <th>Team</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let trainer of trainers">
+      <td><img src="{{ trainer.avatar | image:true }}" alt=""></td>
+      <td>{{trainer.name}}</td>
+      <td [emptyData]="trainer.birthday"></td>
+      <td [ngClass]="{fred: trainer.team == 'Ruby', fyellow: trainer.team == 'FE'}" >
+        {{trainer.team}}
+      </td>
+      <td><button class="btn btn-primary" type="button" (click)="detail(trainer.id)">Detail</button></td>
+    </tr>
+  </table>
+</div>

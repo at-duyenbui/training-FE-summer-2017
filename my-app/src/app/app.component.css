@@ -1,0 +1,17 @@
+.container{
+  max-width: 80%;
+  margin: 5% auto;
+}
+
+.fred{
+  color: red;
+}
+
+.fyellow{
+  color: rgb(250, 255, 189);
+}
+
+.fgray{
+  color: gray;
+  font-style: italic;
+}

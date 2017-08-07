@@ -1,0 +1,25 @@
+{
+  "trainers": [
+    {
+      "id": 1,
+      "name": "anh Vi",
+      "avatar": "https://www.shareicon.net/data/128x128/2015/12/14/207809_face_300x300.png",
+      "birthday": "",
+      "team": "FE"
+    },
+    {
+      "id": 2,
+      "name": "anh Kien",
+      "avatar": "https://www.shareicon.net/data/128x128/2015/12/14/207817_face_300x300.png",
+      "birthday": "123",
+      "team": "Ruby"
+    },
+    {
+      "id": 3,
+      "name": "AA",
+      "avatar": "",
+      "birthday": "",
+      "team": "Ruby"
+    }
+  ]
+}

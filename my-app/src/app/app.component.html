@@ -24,13 +24,13 @@
       <option value="FE">FE</option>
       <option value="PHP">PHP</option>
     </select>
-
-    <label for="skill">Skill</label>
-    <input type="text" name="skill" id="skill" formControlName="skill">
-    <small [hidden]="memberForm.controls.company.controls.skill.valid">
-        Needs main skill
-    </small>
   </fieldset>
+
+  <label for="skill">Skill</label>
+  <input type="text" name="skill" id="skill" formControlName="skill">
+  <small [hidden]="memberForm.controls.skill.valid">
+      Needs main skill
+  </small>
 
   <button type="submit" [disabled]="!memberForm.valid">Add member</button>
 </form>
@@ -42,14 +42,15 @@
     <th>Avatar</th>
     <th>Name</th>
     <th>Birthday</th>
-    <th>Joined</th>
     <th>Team</th>
+    <th>Skill</th>
   </tr>
   <tr *ngFor="let member of members">
       <td><img src="{{member.personal.avatar}}" alt=""></td>
       <td>{{member.personal.name}}</td>
       <td>{{member.personal.birthday}}</td>
-      <td>{{member.company.joined}}</td>
       <td>{{member.company.team}}</td>
+      <td>{{member.skill}}</td>
+      <td><button (click)="editMember(member)">Edit</button></td>
     </tr>
 </table>

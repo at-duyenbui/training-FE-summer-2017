@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms'
+import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -9,53 +9,63 @@ import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms'
 export class AppComponent {
 
   members: Array<any>;
-
-  memberForm: FormGroup;
+  memberForm: any;
 
   constructor(private formBuilder: FormBuilder){
     this.members = [];
+    this.memberForm = this.formBuilder.group({
+      personal: new FormGroup({
+        avatar: new FormControl(),
+        name: new FormControl('', [Validators.required]),
+        birthday: new FormControl()
+      }),
+      company: new FormGroup({
+        joined: new FormControl(),
+        team: new FormControl('', [Validators.required])
+      }),
+      skill: new FormControl()
+    });
   }
 
   ngOnInit(){
-    this.memberForm = this.formBuilder.group({
-      personal: this.formBuilder.group({
-        avatar: '',
-        name: ['', <any>Validators.required],
-        birthday: ''
-      }),
-      company: this.formBuilder.group({
-        joined: '',
-        team: ['', <any>Validators.required],
-        skill: ''
-      }),
-    })
+    this.memberForm.controls.company.controls.team.valueChanges.subscribe(
+      changes => {
+        this.memberForm.setControl('skill', new FormControl('', [Validators.required, this.checkSkillByTeam]));
+      }
+      );
+  }
+
+  ngOndestroy(){
+    this.memberForm.controls.company.controls.team.valueChanges.unsubscribe();
+  }
+
+  checkSkillByTeam = (input: FormControl) => {
+    let isValid: boolean;
+    let team = this.memberForm.controls.company.controls.team.value.toLowerCase();
+    console.log(team);
+    let skill = input.value.toLowerCase();
+    if (team === 'FE') { 
+      if(skill.indexOf('js') === -1) {
+        isValid = false;
+      } else {
+        isValid = true;
+      }
+    } else {
+      if(skill.indexOf(team) === -1) {
+        isValid = false;
+      } else {
+        isValid = true;
+      }
+    }
+    return isValid ? null : {skillsInvalid: true};
   }
 
   addMember(form: any){
-    console.log(form);
     this.members.push(form);
+    this.memberForm.reset();
   }
 
-  ngDoCheck(){
-    const formValueChanges = this.memberForm.valueChanges;
-
-    formValueChanges.subscribe(
-      changes => {
-        let formGroup = this.memberForm.controls.company as FormGroup;
-        let team = formGroup.controls.team.value.toString().toLowerCase();
-        let skill = formGroup.controls.skill.value.toString().toLowerCase();
-
-        if (this.checkContain(team, skill) == false) {
-          formGroup.controls.skill.setErrors({"errors": true});
-        }
-      });
-  }
-
-  checkContain(team: string, skill: string): boolean{
-    if (team == 'fe') {
-      return skill.includes('js');
-    } else {
-      return skill.includes(team);
-    }
+  editMember(member: any){
+    this.memberForm.patchValue(member);
   }
 }

@@ -1,0 +1,9 @@
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.thumbl {
+  width: 30%;
+  height: 50px;
+}

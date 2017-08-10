@@ -1,0 +1,10 @@
+<div *ngIf="article">
+  <div class="col-md-4 col-md-offset-2">
+    <img src="{{article.image}}" alt="">
+  </div>
+  <div class="col-md-4">
+    <h4><strong>{{article.title}}</strong></h4>
+    <p>{{article.content}}</p>
+    <span>Author: {{article.author}}</span>
+  </div>
+</div>

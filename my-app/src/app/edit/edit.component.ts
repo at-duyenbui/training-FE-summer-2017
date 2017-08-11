@@ -33,14 +33,16 @@ export class EditComponent {
 
   ngOnInit(){
     this.sub = this.route.params.subscribe(
-      params => {
+      (params: any) => {
         this.id = +params['id'];
-      });
+      }
+    );
     this.dataJson = this.articleService.getDetailArticle(this.id).subscribe(
       data => {
         this.articleForm.setValue(data);
         this.imgUrl = data.image;
-      });
+      }
+    );
     
   }
 

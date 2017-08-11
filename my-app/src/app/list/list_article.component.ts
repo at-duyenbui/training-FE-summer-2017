@@ -17,10 +17,9 @@ export class ListComponent {
 
   ngOnInit(){
     this.articlesService.getArticles().subscribe(
-      data => {
+      (data: any) => {
         this.articles = data.articles || [];
       }
-      );
+    );
   }
-
 }

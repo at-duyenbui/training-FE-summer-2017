@@ -17,6 +17,6 @@ export class ArticlesService {
   getDetailArticle = (id: number): any => {
     return this.http.get('./assets/data/data.json')
                 .map(res => res.json().articles
-                  .find(article => article.id == id));
+                  .find(article => article.id === id));
   }
 }

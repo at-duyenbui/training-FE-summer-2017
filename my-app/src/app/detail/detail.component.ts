@@ -23,11 +23,13 @@ export class DetailComponent {
     this.sub = this.route.params.subscribe(
       params => {
         this.id = +params['id'];
-      });
+      }
+    );
     this.dataJson = this.articleService.getDetailArticle(this.id).subscribe(
       data => {
         this.article = data;
-      });
+      }
+    );
   }
 
   ngOnDestroy(){

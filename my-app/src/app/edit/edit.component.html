@@ -1,0 +1,24 @@
+<div class="col-md-6 col-md-offset-1">
+  <form [formGroup]="articleForm" novalidate (ngSubmit)="updateMember(articleForm.value)">
+    <legend>Article</legend>
+    <input type="hidden" formControlName="id">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" formControlName="title">
+    </div>
+
+    <div class="form-group">
+      <label for="content">Author</label>
+      <input type="text" class="form-control" id="content" formControlName="author">
+    </div>
+
+    <div class="form-group">
+      <label for="content">Content</label>
+      <input type="text" class="form-control" id="content" formControlName="content">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<div class="col-md-4">
+  <img [src]="imgUrl" alt="">
+</div>

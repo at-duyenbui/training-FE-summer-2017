@@ -1,0 +1,39 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Article 1",
+      "image": "http://lh5.ggpht.com/_HYrNnpBwZAM/TOVAGWKWS2I/AAAAAAAAAUQ/RqlZs8fmWUM/3.jpg",
+      "content": "Article",
+      "author": "A"
+    },
+    {
+      "id": 2,
+      "title": "Article 2",
+      "image": "http://lh3.ggpht.com/_HYrNnpBwZAM/TOVAcRT4YeI/AAAAAAAAAUw/sOZg9aOvKe8/11.jpg",
+      "content": "Article",
+      "author": "A"
+    },
+    {
+      "id": 3,
+      "title": "Article 3",
+      "image": "http://lh4.ggpht.com/_HYrNnpBwZAM/TOVAsjzI4fI/AAAAAAAAAVM/602hebW1MRk/18.jpg",
+      "content": "Article",
+      "author": "A"
+    },
+    {
+      "id": 4,
+      "title": "Article 4",
+      "image": "http://lh5.ggpht.com/_HYrNnpBwZAM/TOVBX-cogFI/AAAAAAAAAWg/__CljyaRx-Q/39.jpg",
+      "content": "Article",
+      "author": "A"
+    },
+    {
+      "id": 5,
+      "title": "Article 5",
+      "image": "http://lh3.ggpht.com/_HYrNnpBwZAM/TOVBflb7kOI/AAAAAAAAAW0/qQ8MxjijbZ0/44.jpg",
+      "content": "Article",
+      "author": "A"
+    }
+  ]
+}

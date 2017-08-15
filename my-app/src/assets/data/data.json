@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Head Phone",
+      "image": "http://demo.ajax-cart.com/var/photo/product/2000x4000/4/176/4.jpg",
+      "price": 50000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipicising elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+    },
+    {
+      "id": 2,
+      "name": "Head Phone",
+      "image": "http://demo.ajax-cart.com/var/photo/product/2000x4000/4/176/4.jpg",
+      "price": 50000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipicising elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+    },
+    {
+      "id": 3,
+      "name": "Head Phone",
+      "image": "http://demo.ajax-cart.com/var/photo/product/2000x4000/4/176/4.jpg",
+      "price": 50000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipicising elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+    },
+    {
+      "id": 4,
+      "name": "Head Phone",
+      "image": "http://demo.ajax-cart.com/var/photo/product/2000x4000/4/176/4.jpg",
+      "price": 50000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipicising elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+    },
+    {
+      "id": 5,
+      "name": "Head Phone",
+      "image": "http://demo.ajax-cart.com/var/photo/product/2000x4000/4/176/4.jpg",
+      "price": 50000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipicising elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+    },
+    {
+      "id": 6,
+      "name": "Head Phone",
+      "image": "http://demo.ajax-cart.com/var/photo/product/2000x4000/4/176/4.jpg",
+      "price": 50000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipicising elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+    }
+  ]
+} 

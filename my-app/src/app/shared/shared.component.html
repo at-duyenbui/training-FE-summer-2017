@@ -1,0 +1,23 @@
+<nav class="navbar navbar-light" style="background-color: #e2e2e2;">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li [routerLinkActive]="['active']" RouterLinkActiveOption="exact: true">
+        <a [routerLink]="['']" >Home</a>
+      </li>
+      <li [routerLinkActive]="['active']" >
+        <a [routerLink]="['products']">List Products</a>
+      </li>
+      <li [routerLinkActive]="['active']" >
+        <a [routerLink]="['about']">About</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li [routerLinkActive]="['active']" >
+        <a [routerLink]="['cart']">
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+          <span>Cart {{totalItems}}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

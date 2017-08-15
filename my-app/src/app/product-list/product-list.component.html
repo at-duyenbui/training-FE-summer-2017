@@ -1,0 +1,15 @@
+<main>
+  <div class="col-main">
+    <ul class="product-list clr" *ngFor="let product of products" >
+      <li class="item">
+        <div class="product">
+          <a class="product-img" href=""><img src="{{product.image}}" alt=""></a>
+          <a class="product-title" href="">{{product.name}}</a>
+          <p class="product-title" href="">{{product.price}}</p>
+          <p class="product-content">{{product.description}}</p>
+          <button class="btn btn-primary" (click)="addCart(product.id)">Add Cart</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</main>
